@@ -179,8 +179,26 @@ nav .container {
   max-width: 800px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  nav .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  nav h1 {
+    margin-bottom: 2vh;
+  }
+}
 nav .links {
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 nav .links a {
   text-decoration: none;
