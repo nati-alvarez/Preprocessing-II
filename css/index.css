@@ -168,6 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes blink {
+  0% {
+    color: #212529;
+  }
+  25% {
+    color: #C0C0C0;
+  }
+  50% {
+    color: #212529;
+  }
+  75% {
+    color: #C0C0C0;
+  }
+  100% {
+    color: #212529;
+  }
+}
 nav {
   padding: 2vh 0vh;
   border-bottom: 2px dashed #C0C0C0;
@@ -204,6 +221,11 @@ nav .links a {
   text-decoration: none;
   color: #212529;
   margin: 0 2vh;
+}
+nav .links a:hover {
+  animation-name: blink;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
 }
 .footer {
   width: 100%;
