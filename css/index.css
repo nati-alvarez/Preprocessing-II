@@ -337,3 +337,41 @@ nav .links a:hover {
   font-size: 2rem;
   text-align: center;
 }
+.home .content-package {
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.home .content-package form {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  padding: 30px 2vh;
+  margin-top: 10px;
+}
+.home .content-package form fieldset {
+  margin-bottom: 20px;
+}
+.home .content-package form fieldset label {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 5px;
+}
+.home .content-package form fieldset input,
+.home .content-package form fieldset textarea {
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #C0C0C0;
+  resize: vertical;
+}
+.home .content-package form button {
+  border: none;
+  background: #17A2B8;
+  color: #FFFFFF;
+  padding: 2vh 4vh;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+}

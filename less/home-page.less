@@ -101,4 +101,43 @@
       .signup-btn(@button-bg, @white);
     }
   }
+
+  .content-package {
+    border-top: 2px dashed @navigation-border;
+    padding-top: 30px;
+    margin-bottom: 30px;
+
+    form {
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid @navigation-border;
+      border-radius: 5px;
+      padding: 30px 2vh;
+      margin-top: 10px;
+
+      fieldset {
+        margin-bottom: 20px;
+
+        label {
+          font-size: 1.6rem;
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        input, textarea {
+          padding: 5px;
+          width: 100%;
+          max-width: 300px;
+          border: 1px solid @navigation-border;
+          resize: vertical;
+        }
+      }
+
+      button {
+        border: none;
+        .signup-btn(@button-bg, @white)
+      }
+    }
+  }
+
 }// home
