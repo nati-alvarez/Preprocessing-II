@@ -1,24 +1,49 @@
 .home {
 
+  @media @mobile {
+    padding: 0px 4vh;
+  }
+
+  header {
+    img {
+      margin-bottom: 3vh;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      flex-direction: column;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+        order: 1;
+      }
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -42,6 +67,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +82,62 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 75%;
+      }
+
+    }
+
+    .btn {
+      .signup-btn(@button-bg, @white);
     }
   }
+
+  .content-package {
+    border-top: 2px dashed @navigation-border;
+    padding-top: 30px;
+    margin-bottom: 30px;
+
+    form {
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid @navigation-border;
+      border-radius: 5px;
+      padding: 30px 2vh;
+      margin-top: 10px;
+
+      fieldset {
+        margin-bottom: 20px;
+
+        label {
+          font-size: 1.6rem;
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        input, textarea {
+          padding: 5px;
+          width: 100%;
+          max-width: 300px;
+          border: 1px solid @navigation-border;
+          resize: vertical;
+        }
+      }
+
+      button {
+        border: none;
+        .signup-btn(@button-bg, @white)
+      }
+    }
+  }
+
 }// home

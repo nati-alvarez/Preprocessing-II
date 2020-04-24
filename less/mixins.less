@@ -1,1 +1,16 @@
 // Mixins in here
+
+.signup-btn(@background, @color){
+    background: @background;
+    color: @color;
+    padding: 2vh 4vh;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.animation(@animationName, @length){
+    animation-name: @animationName;
+    animation-duration: @length;
+    animation-fill-mode: forwards;
+}

@@ -1,1 +1,45 @@
 // Navigation Styles here
+
+nav {
+    padding: 2vh 0vh;
+    border-bottom: 2px dashed @silver;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        max-width: 800px;
+        width: 100%;
+
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        @media @mobile {
+            margin-bottom: 2vh;
+        }
+    }
+
+    .links {
+        font-size: 1.6rem;
+
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        a {
+            text-decoration: none;
+            color: @font-color;
+            margin: 0 2vh;
+
+            &:hover {
+                .animation(blink, 600ms)
+            }
+        }
+    }
+}
